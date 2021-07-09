@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal()
+         {
+             var a,cgpa;
+              a=(f1.sgpa.value);
+             cgpa=(a*10)-5;
+             document.write("Your Percnetage in graduation "+cgpa+"%"+"<br><br><h4>You are Eligible for this Exams:-</h4>")
+             //f1.res.value=cgpa;
+             if(cgpa>=60){
+                        document.write("<ul><li>RRB grade B</li></ul>")
+                        //shouvik="<ul><li>RRB grade B</li></ul>";
+                         }
+           if(cgpa>=50){
+                       document.write("<ul><li>CAT</li><li>MAT</li><li>XAT</li></ul>")
+                      //mithu="<ul><li>CAT</li><li>MAT</li><li>XAT</li></ul>";
+                        }
+             if(cgpa>=35){
+                            document.write("<ul><li>UPSC Civil service exam</li><li>UPSC CDSE</li><li>UPSC CAPF Assistant Commandant</li><li>SSC CGL</li><li>SSC CPO</li><li>SBI PO,SBI Cleark</li><li>IBPS PO,IBPS Cleark</li><li>IBPS RRB</li><li>NABARD Grade B, Assistant</li><li>SEBI</li><li>LIC AAO, Assistant</li><li>WBCS</li><li>RRB NTPC</li></ul>")
+                        }
+                 
+             else{
+                   document.write ("Sorry my friend you failed in the exam")
+                  //shouvik="Sorry my friend you failed in the exam";
+                }
+        }
+    </script>
+    <link rel="stylesheet" href="https:fonts.googleapis.com/css?family=sofia">
+    <style>
+            body{
+                    background-color:rgb(219,251,210);
+                    font-family:"sofia",comic sans ms;
+        }
+        .button1{   
+                    background-color: #4CAF50;
+                    border-radius: 10px;
+                    border:none;
+                    color:white;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+        .button2{   
+                    background-color: #4CAF50;
+                    border-radius: 10px;
+                    border:none;
+                    color:white;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            
+    </style>
+</head>
+<body>
+    <p>know your percentage and eligiblity</p>
+    <form name="f1">
+        Enter your SGPA here : <input type="text" name="sgpa"><br><br>
+        <input type="button" value="Enter" onclick=cal() class="button1">
+        <input type="reset" value="Clear" class="button2"><br><br><br><br><br><br><br><br><br><br><br><br><br></br><br></br>
+        <hr>
+        <footer><marquee>Devoloped by:Shouvik Ghosh<br>Project manager:Akash Bhattacharjee<br>Inspired by: Avijit Chakraborty<br>Customer care manager:Ajoy Biswas</marquee></footer>
+        <hr>
+    </form>
+</body>
+</html>
